@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory System</title>
+</head>
+<body style="text-align:center;font-family:Arial;">
+
+<h2>Inventory System – Live Demo</h2>
+
+<input placeholder="Item Name" id="item">
+<input placeholder="Qty" id="qty">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add(){
+  let i = item.value;
+  let q = qty.value;
+  let li = document.createElement("li");
+  li.innerText = i + " - Qty: " + q;
+  list.appendChild(li);
+}
+</script>
+
+</body>
+</html>
