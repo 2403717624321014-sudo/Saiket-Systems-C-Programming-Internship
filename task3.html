@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Address Book</title>
+</head>
+<body style="font-family: Arial; text-align:center;">
+
+<h2>Address Book – Live Demo</h2>
+
+<input placeholder="Name" id="name">
+<input placeholder="Phone" id="phone">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add(){
+  let n = name.value;
+  let p = phone.value;
+  let li = document.createElement("li");
+  li.innerText = n + " - " + p;
+  list.appendChild(li);
+}
+</script>
+
+</body>
+</html>
